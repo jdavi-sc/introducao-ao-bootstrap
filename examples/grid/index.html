@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Adicionando o Bootstrap via CDN com o jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <title>Grid</title>
+</head>
+<body>
+    <p>O sistema de grid do Bootstrap é construído com flexbox e permite até 12 colunas na página.</p>
+    <p>O sistema de grid do Bootstrap 5 possui seis classes:</p>
+    <ul>
+        <li>
+            <code>.col</code> (dispositivos extra pequenos - largura da tela inferior a 576px)
+        </li>
+        <li>
+            <code>.col-sm</code> (dispositivos pequenos - largura da tela igual ou superior a 576px)
+        </li>
+        <li>
+            <code>.col-md</code> (dispositivos médios - largura da tela igual ou superior a 768px)
+        </li>
+        <li>
+            <code>.col-lg</code> (dispositivos grandes - largura da tela igual ou superior a 992px)
+        </li>
+        <li>
+            <code>.col-xl</code> (dispositivos extragrandes - largura da tela igual ou superior a 1200px)
+        </li>
+        <li>
+            <code>.col-xxl</code> (dispositivos extragrandes - largura da tela igual ou superior a 1400px)
+        </li>
+    </ul>
+
+<div class="container-fluid mt-3">
+    
+  <h1>Três colunas de largura igual</h1>
+  
+  <div class="row">
+    <div class="col p-3 bg-primary text-white">.col</div>
+    <div class="col p-3 bg-dark text-white">.col</div>
+    <div class="col p-3 bg-primary text-white">.col</div>
+  </div>
+</div>
+
+<div class="container-fluid mt-3">
+  <p>O exemplo a seguir mostra como criar quatro colunas de largura igual, começando em tablets e escalando para desktops extragrandes</p>
+  <div class="row">
+    <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+    <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+    <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+    <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+  </div>
+</div>
+
+    <!-- Adicionando o JavaScript via CDN com o jsDelivr-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
