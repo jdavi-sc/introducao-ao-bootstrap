@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adicionando o Bootstrap via CDN com o jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Navbar</title>
+</head>
+
+<body>
+    <h1>NavBar</h1>
+    <p>Com o Bootstrap, uma barra de navegação pode se expandir ou se recolher, dependendo do tamanho da tela.</p>
+    <p>
+        Uma barra de navegação padrão é criada com a classe <code>.navbar</code>, seguida por uma classe de recolhimento
+        responsiva:
+        <code>.navbar-expand-xxl|xl|lg|md|sm</code> (empilha a barra de navegação verticalmente em telas xxlarge, extra
+        large, large,
+        medium ou small).
+    </p>
+
+    <p>
+        Remova a classe <code>.navbar-expand-*</code> para criar uma barra de navegação que será sempre vertical.
+    </p>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Marca / logotipo</h1>
+
+    <p>
+        A classe <code>.navbar-brand</code> é usada para destacar a marca/logotipo/nome do projeto da sua página
+    </p>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+    </nav>
+
+    <p>
+        Ao usar a classe <code>.navbar-brand</code> com imagens, o Bootstrap 5 estilizará automaticamente a imagem para
+        que ela se ajuste verticalmente à barra de navegação.
+    </p>
+
+    <h1>
+        Barra de navegação recolhível
+    </h1>
+
+    <p>
+        Para criar uma barra de navegação recolhível, use um botão com
+        <code>class="navbar-toggler", data-bs-toggle="collapse" and data-bs-target="#thetarget"</code>
+    </p>
+
+    <p>
+        Em seguida, envolva o conteúdo da barra de navegação (links, etc.) dentro de um elemento <code>div</code> com
+        <code>class="collapse navbar-collapse"</code> seguido por um id que corresponda ao do
+        <code>data-bs-target do botao "thetarget</code>
+    </p>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Barra de navegação com menu suspenso</h1>
+
+    <p>
+        As barras de navegação também podem conter menus suspensos
+    </p>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link</a></li>
+                            <li><a class="dropdown-item" href="#">Another link</a></li>
+                            <li><a class="dropdown-item" href="#">A third link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Formulários e botões da barra de navegação</h1>
+
+    <p>
+        Você também pode incluir formulários dentro da barra de navegação
+    </p>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Adicionando o JavaScript via CDN com o jsDelivr-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
